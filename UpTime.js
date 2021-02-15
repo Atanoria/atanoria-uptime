@@ -6,7 +6,7 @@ const fs = require('fs')
 require('express')().listen(1343)
 const moment = require('moment')
 require('moment-duration-format')
-const prefix = 'lg!'
+const prefix = 'up!'
 
 setInterval(() => {
 const Linkler = db.get('Linkler')
@@ -225,7 +225,7 @@ message.channel.send(dark5)
 
 client.on('ready', () => {
 client.user.setActivity(`${prefix}yardım | ${prefix}ekle`, { type: 'WATCHING' })
-//client.user.setStatus('dnd')
+client.user.setStatus('dnd')
 })
 
 client.on("message", async message => {
@@ -267,4 +267,4 @@ client.on("message", async message => {
 const Log = message => {
 console.log(`${message}`)
 }
-client.login('')
+client.login('TOKEN BURAYA')
