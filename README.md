@@ -1,1 +1,0 @@
-# atanoria-uptime
